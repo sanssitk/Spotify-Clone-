@@ -1,0 +1,51 @@
+.songRow {
+    margin-left: 20px;
+    padding: 12px 20px;
+    display: grid;
+    grid-template-columns: 2.5% 36% 35% 18.5% 8%;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+.songRow:hover {
+    cursor: pointer;
+    background-color: rgb(65, 65, 65);
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.songRow > * > p, .songRow__title__details > p {
+    font-size: 14px;
+    margin-top: 3px;
+    color: lightgrey;
+}
+
+.songRow__info__title{
+    display: flex;
+}
+
+.songRow__coverImg {
+    height: 40px;
+    width: 40px;
+    margin: 0 15px;
+}
+
+.songRow__title__details > h1 {
+    font-size: 16px;
+}
+
+.songRow__time{
+    display: flex;
+    justify-content: space-between;
+    align-content: center !important;
+}
+
+.songRow__time > p {
+    font-size: 15px;
+    margin-top: -1px;
+}
+
+.songRow * .MuiSvgIcon-root {
+    font-size: 0.9rem !important;
+}

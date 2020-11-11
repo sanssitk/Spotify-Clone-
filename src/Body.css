@@ -1,0 +1,142 @@
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+.body {
+    flex: 0.85;
+    height: 100vh;
+    color: white;
+    overflow-y: scroll;
+    background-color: linear-gradient(180deg, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 1) 50%);
+}
+
+.body__top {
+    padding-bottom: 15px;
+    background: rgb(92, 92, 92);
+    background: linear-gradient(180deg, rgb(75, 75, 75) 4%, rgba(40, 40, 40, 1) 75%);
+}
+
+.body__info {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 30px;    
+}
+
+.body__infoText {
+    flex: 1;
+}
+
+.album__cover>img {
+    opacity: 1;
+    height: 15vw;
+    margin-right: 20px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.album__cover>img:hover{
+    opacity: 0.15;
+}
+
+.album__cover {
+    position: relative;
+}
+
+.middle {
+    cursor: pointer;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.album__cover:hover .middle {    
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 18px;
+}
+
+.edit__icon{
+    font-size: 2.5rem !important;
+}
+
+.body__infoText>strong {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.body__infoText>h2 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.body__infoText>p {
+    margin: 7px 0;
+    font-size: 14px;
+    color: lightgray;
+}
+
+.body__icons {
+    display: flex;
+    align-items: center;
+}
+
+.body__icons>.MuiSvgIcon-root {
+    margin-right: 20px;
+}
+
+.body__shuffle {
+    font-size: 40px !important;
+    padding: 10px;
+    margin: 20px 0 20px 30px;
+    background-color: #1ED761 !important;
+    border-radius: 100px;
+}
+
+.body__shuffle:hover {
+    transition: 0.1s transform ease-in;
+    transform: scale(1.08);
+}
+
+.body__songs {
+    background: rgb(24, 23, 23);
+    background: linear-gradient(180deg, rgba(24, 23, 23, 0.9) 0%, rgba(0, 0, 0, 1) 40%);
+}
+
+.songs__Title {
+    margin-left: 20px;
+    padding: 5px 20px;
+    display: grid;
+    grid-template-columns: 2.5% 36% 35% 18.5% 8%;
+    align-items: center;
+    color: grey;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.sNo {
+    /* margin-left: 30px;   */
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.title {
+    margin-left: 15px;
+}
+
+.duration {
+    text-align: center;
+}
+
+.duration>.MuiSvgIcon-root {
+    font-size: 1rem;
+}
+
